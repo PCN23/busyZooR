@@ -35,6 +35,11 @@ function App() {
 
     setVehicles(vehicles.slice());
   }
+  function handleDeleteVehicle() {
+    vehicles.pop();
+    setVehicles(vehicles.slice());
+
+  }
 
 
 
@@ -88,11 +93,12 @@ function App() {
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'car' to the end */}
         <button onClick={handleCarClick}>Add Car</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'bus' to the end */}
-        <button onClick={handleBusClick}>Bus</button>
+        <button onClick={handleBusClick}>Add Bus</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'truck' to the end */}
-        <button onClick={handleTruckClick}>Truck</button>
+        <button onClick={handleTruckClick}>Add Truck</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'motorcycle' to the end */}
-        <button onClick={handleMotorcycleClick}>Motorcycle</button>
+        <button onClick={handleMotorcycleClick}>Add Motorcycle</button>
+        <button onClick={handleDeleteVehicle}>Delete last vehicle</button>      
       </div>
 
     </div>
