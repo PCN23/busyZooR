@@ -7,15 +7,9 @@ export default function Vehicle({ vehicle }) {
     { vehicle === 'truck' && '🚚'}
     { vehicle === 'bus' && '🚌'}
     { vehicle === 'motorcycle' && '🏍️'}
-    
 
   </div>;
 }
-
-
-
-
-
 
 
 
